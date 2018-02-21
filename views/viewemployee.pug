@@ -1,0 +1,48 @@
+html
+    head
+        style
+            include style.css
+    body
+
+
+        #table-wrapper
+          table#desc
+            tr
+              th Employee List
+            tr
+            each nameObj, i in AllEmpList
+                    td=nameObj.name
+            tr
+              td
+          table
+            tr
+              th DOB
+            tr
+            each dobObj, i in AllEmpList
+              td=dobObj.dob
+            tr
+
+          table
+              tr
+                th Designation
+              tr
+              each desObj, i in AllEmpList
+                td=desObj.designation
+              tr
+          table
+              tr
+                th Salary
+              tr
+              each salObj, i in AllEmpList
+                td=salObj.salary
+              tr
+          table
+              tr
+                th Edit
+              tr
+                td Edit
+          Table
+              tr
+                th Delete
+              tr
+                td Delete

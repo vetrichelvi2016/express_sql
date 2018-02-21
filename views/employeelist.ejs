@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+ <script src="app.js"></script>
+</head>
+
+<style>
+table {
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+td, th {
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 8px;
+}
+
+tr:nth-child(even) {
+   background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h2>Employee list</h2>
+<table>
+ <tr>
+   <th>Name</th>
+   <th>Dob</th>
+   <th>Designation</th>
+   <th>Salary</th>
+   <th>Edit</th>
+   <th>Delete</th>
+ </tr>
+ <tr>
+    <% for(var i=0; i<empList.length; i++) { %>
+   <td><%= empList[i].name %></td>
+   <td><%= empList[i].dob %></td>
+   <td><%= empList[i].designation %></td>
+   <td><%= empList[i].salary %></td>
+   <td>Edit</td>
+   <td>Delete</td>
+ </tr>
+ <% } %>
+</table>
+</body>
+</html>

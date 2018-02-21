@@ -1,0 +1,27 @@
+{
+  "name": "express_sql",
+  "version": "1.0.0",
+  "description": "sample app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "vetri",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vetrichelvi2016/express_sql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vetrichelvi2016/express_sql/issues"
+  },
+  "homepage": "https://github.com/vetrichelvi2016/express_sql#readme"
+}

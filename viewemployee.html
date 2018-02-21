@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h2>HTML Table</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Dob</th>
+    <th>Designation</th>
+    <th>Salary</th>
+  </tr>
+  <tr>
+    <td><%=empList.empName %></td>
+    <td>{{empName}}</td>
+    <td>{{empName}}</td>
+  </tr>
+  <tr>
+      <td>{{empDob}}</td>
+      <td>{{empDob}}</td>
+      <td>{{empDob}}</td>
+  </tr>
+  <tr>
+    <td>{{empDes}}</td>
+    <td>{{empDes}}</td>
+    <td>{{empDes}}</td>
+  </tr>
+  <tr>
+    <td>{{empSalary}}</td>
+    <td>{{empSalary}}</td>
+    <td>{{empSalary}}</td>
+  </tr>
+</table>
+</body>
+</html>
